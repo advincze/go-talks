@@ -1,0 +1,30 @@
+Go
+introducing the go language
+
+Tags: golang, concurrency
+
+Adam Vincze
+Engineer, ideas
+@advincze
+
+* First Slide
+
+- simple,
+- readable,
+- maintainable.
+
+* code
+
+- whole file
+.code hello.go
+
+- from to
+.code hello.go /func .* /,/^}/
+
+
+* executable code
+
+- whole file
+.play hello.go
+- from to
+.play hello.go /func .* /,/^}/
