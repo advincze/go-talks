@@ -45,18 +45,43 @@ planned: 2 releases / year
 
 - Gofix automates updates for backward-incompatible changes. 
 
-* go workflow
+* The go tool
 
 [[http://golang.org/]]
 
 Installation: Download go (osx, linux, windows, etc)
-Run code
 
-	> go run main.go
+A complete build, test, and install tool for Go programs.
+Some realistic examples:
 
-Compile code
+	$ go run hello.go       # Compile-and-go. (Ha!).
+	$ go build package      # Build everything in directory (and deps).
+	$ go install            # Install everything in dir and (and deps).
+	$ go test archive/zip   # Compile and run unit tests for package.
 
-	> go build main.go
+The go tool also wraps gofmt, gofix, etc.:
+
+	$ go fmt                # Run gofmt on package in current dir.
+	$ go fix                # Run gofix on package in current dir.
+
+* go tool on remote repositories
+
+The go tool automates installation of remote packages.
+
+Packages are addressed by import strings. 
+Import strings are just source repository URLs. 
+Go tool downloads and installs all dependencies, transitively.
+
+	$ go get code.google.com/p/myrepo/mypackage
+
+Installs my package, plus any remote dependencies it may have. 
+And to use the package in Go source:
+
+	import "code.google.com/p/myrepo/mypackage"
+
+The tool can even run gofix as it installs:
+
+	$ go get -fix code.google.com/p/myrepo/mypackage
 
 * go example
 
@@ -72,22 +97,32 @@ Compile code
 
 - oop
 
-* tools
+* Learn more
 
-- go get, run , build, install
-- go fmt
-- go vet
+The Go web site has a huge amount of documentation:
 
+.link http://golang.org
+
+Learn Go from a web browser:
+
+.link http://tour.golang.org
+
+Google Code project:
+
+.link http://code.google.com/p/go
 
 * links i used
 
 official go presentations:
-[[http://talks.golang.org/]]
+
+.link http://talks.golang.org/
 
 other presentations:
-[[http://www.nada.kth.se/~snilsson/go_for_java_programmers/]]
+
+.link http://www.nada.kth.se/~snilsson/go_for_java_programmers
 
 
 the go present tool
-[[http://godoc.org/code.google.com/p/go.tools/present][present tool .slide file syntax]]
-[[http://go-talks.appspot.com/github.com/advincze/go-talks/go4j.slide]]
+
+.link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
+.link http://go-talks.appspot.com/github.com/advincze/go-talks/go4j.slide
