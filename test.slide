@@ -7,6 +7,105 @@ Adam Vincze
 Engineer, ideas
 @advincze
 
+* topics
+
+- language features
+- tooling / workflow
+- libraries / community
+
+
+
+* the language - structure
+
+- files
+- packages
+- types
+- structs
+- access (public - package private)
+
+* the language 
+
+control structures
+
+- if, for, switch 
+
+Functions 
+
+- multiple return 
+- named return
+- defer
+
+Data 
+
+- object construction 
+- slices
+- map
+
+* the language
+
+- constants 
+- variables
+- init
+
+- pointers / values
+- interfaces
+- blank
+- embedding(subclass)
+
+* the language
+
+Concurrency
+
+- goroutines
+- channels
+
+Errors
+
+- panic /recover
+- error
+
+* tooling /workflow
+
+
+
+
+* the language
+
+- static typing
+- type inference
+
+* the language
+
+- concurrency
+-  
+
+** subsection
+
+Text
+	formateed text
+	as;lkfjas;dlk
+	s
+	adfasd
+
+	fdsa
+
+
+* formatting
+_italic_
+*bold*
+`program`
+_this_is_all_italic_
+_Why_use_scoped__ptr_? Use plain ***ptr* instead.	
+[[http://google.com]]
+
+
+* Things I like about Java
+
+- simple,
+- readable,
+- maintainable.
+
+
 * First Slide
 
 - simple,
