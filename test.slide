@@ -11,9 +11,7 @@ Engineer, ideas
 
 - language features
 - tooling / workflow
-- libraries / community
-
-
+- libraries / communitypho
 
 * the language - structure
 
@@ -63,6 +61,10 @@ Errors
 
 - panic /recover
 - error
+
+* web server
+
+.play websrv.go /func .* /,/^}/
 
 * tooling /workflow
 

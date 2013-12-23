@@ -1,0 +1,91 @@
+Go for Javaistas
+an introduction to go
+8 Jan 2014
+Tags: golang, concurrency
+
+Adam Vincze
+Engineer, ideas
+
+@advincze
+
+* the structure of this talk
+
+- overview
+- background / history
+- go workflow (platforms, )
+- An example teaser (web server ex)
+- go the language
+- go vs java
+- tools (go get, fmt, run, build install, )
+- go projects
+- go language evolution
+
+* overview
+
+- Efficiency
+- Safety
+- Concurrency
+- Scalability
+- Fast development cycle
+- A cute mascot
+
+* go history
+
+[[http://talks.golang.org/2012/go1.slide][talk rob: go v1.0]]
+
+- Google 20% project in late 2007
+- by Rob Pike, Ken Thompson, Robert Griesemer
+- Released as an open source project in November 2009.
+v1.0 2012-03
+v1.1 2013-04
+v1.2 2013-12
+planned: 2 releases / year 
+- Code review central to the project.
+- "Discuss first, code later" 
+
+- Gofix automates updates for backward-incompatible changes. 
+
+* go workflow
+
+[[http://golang.org/]]
+
+Installation: Download go (osx, linux, windows, etc)
+Run code
+
+	> go run main.go
+
+Compile code
+
+	> go build main.go
+
+* go example
+
+* go example
+
+* go language
+
+* go == java
+
+* go != java
+
+- oop
+
+* tools
+
+- go get, run , build, install
+- go fmt
+- go vet
+
+
+* links i used
+
+official go presentations:
+[[http://talks.golang.org/]]
+
+other presentations:
+[[http://www.nada.kth.se/~snilsson/go_for_java_programmers/]]
+
+
+the go present tool
+[[http://godoc.org/code.google.com/p/go.tools/present][present tool .slide file syntax]]
+[[http://go-talks.appspot.com/github.com/advincze/go-talks/go4j.slide]]
