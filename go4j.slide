@@ -60,6 +60,8 @@ Compile code
 
 * go example
 
+.code /stack/stack.go 
+
 * go example
 
 * go language
