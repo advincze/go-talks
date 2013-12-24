@@ -83,9 +83,9 @@ The tool can even run gofix as it installs:
 
 	$ go get -fix code.google.com/p/myrepo/mypackage
 
-* hello go
+* hello Go
 
-.code hello.go
+.play hello.go
 
 * go example
 
@@ -97,9 +97,39 @@ The tool can even run gofix as it installs:
 
 * go == java
 
+- packages
+- structs 
+- interfaces
+- access levels (Exported/non Exported) == public package private
+- pass by reference(maps, slices, channels)
+
 * go != java
 
+- declaration reversed
+
+	var i int 
+	i = 5
+
+	var j = 5
+
+	k := 5
+
+- function types
+- multiple assignment
+- blank identifier
+- zero values
 - oop
+- nil is the new null
+- no function overloading
+- no implicit type conversion
+- instead of exceptions , go uses errors and panic/recover
+- methods on any type, no boxing required
+- pointers vs Values
+- defer
+
+* formatting
+
+- part of the language
 
 * Learn more
 
