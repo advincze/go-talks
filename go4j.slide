@@ -83,6 +83,10 @@ The tool can even run gofix as it installs:
 
 	$ go get -fix code.google.com/p/myrepo/mypackage
 
+* hello go
+
+.code hello.go
+
 * go example
 
 .code /stack/stack.go 
