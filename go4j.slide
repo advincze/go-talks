@@ -22,6 +22,8 @@ Engineer, ideas
 
 * overview
 
+* overview - Design of Go
+
 - Efficiency
 - Safety
 - Concurrency
@@ -29,21 +31,44 @@ Engineer, ideas
 - Fast development cycle
 - A cute mascot
 
+* the gopher
+
+.image images/gopher_search.png
+
+* overview - What is Go?
+
+Features:
+
+- Native code generation (compiled)
+- Statically typed
+- Composition via interfaces
+- Memory safe
+- Garbage collected
+- Native concurrency support
+- Excellent standard library
+- Great tools
+
+* background / history
+
 * go history
 
 [[http://talks.golang.org/2012/go1.slide][talk rob: go v1.0]]
 
 - Google 20% project in late 2007
-- by Rob Pike, Ken Thompson, Robert Griesemer
+- Language designed by programmers (vs academia)
+- by Rob Pike, Ken Thompson, Robert Griesemer (Bell labs, Unix, Plan9, Java)
 - Released as an open source project in November 2009.
-v1.0 2012-03
-v1.1 2013-04
-v1.2 2013-12
-planned: 2 releases / year 
+- v1.0 2012-03
+- v1.1 2013-04
+- v1.2 2013-12
+- planned: 2 releases / year 
+
+* go history
+
 - Code review central to the project.
 - "Discuss first, code later" 
-
 - Gofix automates updates for backward-incompatible changes. 
+- part of the ecellent go toolchain
 
 * The go tool
 
