@@ -74,7 +74,6 @@ Features:
 
 .play hello.go
 
-
 build
 
 	cd hello/
@@ -82,8 +81,6 @@ build
 run
 
 	./hello 
-
-* go workflow
 
 * The go tool
 
@@ -104,46 +101,40 @@ The go tool also wraps gofmt, gofix, etc.:
 	$ go fmt                # Run gofmt on package in current dir.
 	$ go fix                # Run gofix on package in current dir.
 
-* go tool on remote repositories
-
-The go tool automates installation of remote packages.
-
-Packages are addressed by import strings. 
-Import strings are just source repository URLs. 
-Go tool downloads and installs all dependencies, transitively.
-
-	$ go get code.google.com/p/myrepo/mypackage
-
-Installs my package, plus any remote dependencies it may have. 
-And to use the package in Go source:
-
-	import "code.google.com/p/myrepo/mypackage"
-
-The tool can even run gofix as it installs:
-
-	$ go get -fix code.google.com/p/myrepo/mypackage
-
-
-
-* Go webserver
-
-.code server.go /BEGIN/,/END/
-
-* go example
-
-.code /stack/stack.go 
-
-* go example
 
 * go language
 
-* go == java
+* packages
+	
+	bin/
+	    streak                         # command executable
+	    todo                           # command executable
+	src/
+	    code.google.com/p/goauth2/
+	        oauth/
+	            oauth.go               # package source
+	            oauth_test.go          # test source
+	    github.com/nf/
+	        streak/
+	            oauth.go               # command source
+	            streak.go              # command source
+	        todo/
+	            task/
+	                task.go            # package source
+	            todo.go                # command source
 
-- packages
-- structs 
-- interfaces
-- access levels (Exported/non Exported) == public package private
-- pass by reference(maps, slices, channels)
+* structs 
+
+ access levels (Exported/non Exported) == public package private
+ pointers vs values 
+ pass by reference(maps, slices, channels)
+
+* interfaces
+
+Duck typing
+
+
+
 
 * go != java
 
