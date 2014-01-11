@@ -11,18 +11,16 @@ Engineer, ideas
 * the structure of this talk
 
 - overview
-- background / history
-- go workflow (platforms, )
+- history, language evolution
 - An example teaser (web server ex)
 - go the language
-- go vs java
-- tools (go get, fmt, run, build install, )
+- workflow /tools (go get, fmt, run, build install, )
 - go projects
-- go language evolution
 
-* overview
 
-* overview - Design of Go
+* go in a nutshell
+
+* go in a nutshell - Design of Go
 
 - Efficiency
 - Safety
@@ -31,20 +29,21 @@ Engineer, ideas
 - Fast development cycle
 - A cute mascot
 
-* the gopher
+* go in a nutshell - the gopher
 
 .image images/gopher_search.png
 
-* overview - What is Go?
+* go in a nutshell - What is Go?
 
 Features:
 
 - Native code generation (compiled)
-- Statically typed
-- Composition via interfaces
+- Statically (and "strongly") typed 
+- Not really object oriented, very much oriented on objects
+- Composition via interfaces (Duck Typing)
 - Memory safe
 - Garbage collected
-- Native concurrency support
+- Native concurrency support (yey multicores)
 - Excellent standard library
 - Great tools
 
@@ -63,12 +62,23 @@ Features:
 - v1.2 2013-12
 - planned: 2 releases / year 
 
-* go history
+* go principles
 
-- Code review central to the project.
+- Code review central to the project. 
+.link https://codereview.appspot.com
 - "Discuss first, code later" 
+- part of the ecellent go toolchain:
 - Gofix automates updates for backward-incompatible changes. 
-- part of the ecellent go toolchain
+
+* hello Go
+
+.play hello.go
+
+	cd hello/
+	go build // HL 
+	./hello 
+
+* go workflow
 
 * The go tool
 
@@ -108,9 +118,11 @@ The tool can even run gofix as it installs:
 
 	$ go get -fix code.google.com/p/myrepo/mypackage
 
-* hello Go
 
-.play hello.go
+
+* Go webserver
+
+.code server.go /BEGIN/,/END/
 
 * go example
 
@@ -156,6 +168,11 @@ The tool can even run gofix as it installs:
 
 - part of the language
 
+
+
+
+
+
 * Learn more
 
 The Go web site has a huge amount of documentation:
@@ -170,6 +187,20 @@ Google Code project:
 
 .link http://code.google.com/p/go
 
+* some projects using go
+
+- juju (canonical)
+- google download servers: dl.google.com
+- https://www.docker.io/
+- services at SoundCloud
+- services at Wunderlist
+- http://www.iron.io/
+- http://www.packer.io/
+- http://camlistore.org/
+- doozerd
+
+.link https://code.google.com/p/go-wiki/wiki/Projects
+
 * links i used
 
 official go presentations:
@@ -180,8 +211,16 @@ other presentations:
 
 .link http://www.nada.kth.se/~snilsson/go_for_java_programmers
 
-
-the go present tool
+* the go present tool
 
 .link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
 .link http://go-talks.appspot.com/github.com/advincze/go-talks/go4j.slide
+
+
+* links
+
+search tip : search for "golang" instead of "go"
+
+.link https://groups.google.com/forum/#!forum/golang-nuts
+
+twitter @golang_news
