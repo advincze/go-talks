@@ -1,5 +1,5 @@
-Go for Javaistas
-an introduction to go
+Go in a nutshell
+an introduction to the go programming language
 8 Jan 2014
 Tags: golang, concurrency
 
@@ -12,7 +12,7 @@ Engineer, ideas
 
 - overview
 - history, language evolution
-- An example teaser (web server ex)
+- example 
 - go the language
 - workflow /tools (go get, fmt, run, build install, )
 - go projects
@@ -74,8 +74,13 @@ Features:
 
 .play hello.go
 
+
+build
+
 	cd hello/
-	go build // HL 
+	*go* build
+run
+
 	./hello 
 
 * go workflow
