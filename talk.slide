@@ -75,7 +75,7 @@ Engineer, ideas
 - Code review central to the project. 
 .link https://codereview.appspot.com
 - "Discuss first, code later" 
-- part of the ecellent go toolchain: Gofix automates updates for backward-incompatible changes. 
+- go tools: e.g. gofix automates updates for backward-incompatible changes. 
 
 .image images/project.png
 
@@ -153,11 +153,19 @@ The go tool also wraps gofmt, gofix, etc.:
 .image images/ref.png
 
 
-* 4. var, func, type
+* 4. type
 
-.play -edit variables.go /BEGIN/,/END/
+.code type.go /BEGIN/,/END/
 
 
+* 4. var
+
+.play variables.go /BEGIN/,/END/
+
+
+* 4. func
+
+- values vs refs
 
 
 * 4. runes
@@ -168,37 +176,38 @@ The go tool also wraps gofmt, gofix, etc.:
  access levels (Exported/non Exported) == public package private
  pointers vs values 
  pass by reference(maps, slices, channels)
+- oop :embedding
 
 
 * 4. interfaces
 
-Duck typing
+- Duck typing
+- type switch
 
 
 * 4. maps and slices
 
-* ??? go != java
 
-- function types
-- multiple assignment
-- blank identifier
-- zero values
-- oop
-- nil is the new null
-- no function overloading
-- no implicit type conversion
+
+
+* error handling
+
 - instead of exceptions , go uses errors and panic/recover
-- methods on any type, no boxing required
-- pointers vs Values
+
+
+* concurrency and more
+
+- goroutines
+- channels
+- select
 - defer
 
+- race detector
 
 * 4. formatting
 
 - part of the language
 - no more discussions
-- 
-
 
 
 * 5. Learn more
