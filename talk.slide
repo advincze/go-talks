@@ -104,6 +104,8 @@ The go tool also wraps gofmt, gofix, etc.:
 
 * go language
 
+http://golang.org/ref/spec
+
 * packages
 	
 	bin/
@@ -112,18 +114,25 @@ The go tool also wraps gofmt, gofix, etc.:
 	src/
 	    code.google.com/p/goauth2/
 	        oauth/
-	            oauth.go               # package source
-	            oauth_test.go          # test source
+	            oauth.go               # package code.google.com/p/goauth2/oauth
+	            oauth_test.go          # package code.google.com/p/goauth2/oauth
 	    github.com/nf/
 	        streak/
-	            oauth.go               # command source
-	            streak.go              # command source
+	            oauth.go               # package main
+	            streak.go              # package main
 	        todo/
 	            task/
-	                task.go            # package source
-	            todo.go                # command source
+	                task.go            # package github.com/nf/task
+	            todo.go                # package main
 
-* structs 
+* func, var, type
+
+
+* runes
+
+
+
+* structs
 
  access levels (Exported/non Exported) == public package private
  pointers vs values 
@@ -185,19 +194,20 @@ Google Code project:
 
 * some projects using go
 
-- juju (canonical)
+- [[https://www.docker.io/][docker]]
+- [[http://www.packer.io/][packer]]
+- [[http://www.serfdom.io/][serf]]
+- [[https://juju.ubuntu.com/][canonical/juju]]
+- [[http://heka-docs.readthedocs.org/en/latest/][mozilla/heka]]
 - google download servers: dl.google.com
-- https://www.docker.io/
-- services at SoundCloud
-- services at Wunderlist
-- http://www.iron.io/
-- http://www.packer.io/
-- http://camlistore.org/
-- doozerd
+- backend@[[https://soundcloud.com/][SoundCloud]]
+- backend@[[https://www.wunderlist.com/][Wunderlist]]
+- [[http://www.iron.io/][ironMQ]]
+- [[http://camlistore.org/][calimstore]], [[https://github.com/ha/doozerd][doozerd]], ...
 
 .link https://code.google.com/p/go-wiki/wiki/Projects
 
-* links i used
+* links used
 
 official go presentations:
 
@@ -207,16 +217,28 @@ other presentations:
 
 .link http://www.nada.kth.se/~snilsson/go_for_java_programmers
 
+
+
+
+
 * the go present tool
 
 .link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
-.link http://go-talks.appspot.com/github.com/advincze/go-talks/go4j.slide
+
+this presentation: 
+
+.link http://go-talks.appspot.com/github.com/advincze/go-talks/talk.slide 
+
 
 
 * links
 
-search tip : search for "golang" instead of "go"
+search tip: search for "golang" instead of "go"
 
-.link https://groups.google.com/forum/#!forum/golang-nuts
+.link https://groups.google.com/forum/#!forum/golang-nuts gGroup golang-nuts
 
-twitter @golang_news
+.link http://www.meetup.com/golang-users-berlin/events/159374622/ golang meetup with NG on 2014-02-04
+
+twitter 
+
+.link https://twitter.com/golang_news @golang_news
