@@ -1,6 +1,6 @@
 Go in a nutshell
 an introduction to the go programming language
-8 Jan 2014
+15 Jan 2014
 Tags: golang, concurrency
 
 Adam Vincze
@@ -10,16 +10,17 @@ Engineer, ideas
 
 * today
 
-- overview
-- history, language evolution
-- example 
-- go the language
-- workflow /tools (go get, fmt, run, build install, )
-- go projects
+1. overview
+2. history, language evolution
+3. example 
+4. the go language
+5. workflow /tools (go get, fmt, run, build install, )
+6. projects, links, thanks
 
-* go in a nutshell
+* 1. go in a nutshell
 
-* go in a nutshell - Design of Go
+
+* 1. go in a nutshell - Design of Go
 
 - Efficiency
 - Safety
@@ -28,11 +29,13 @@ Engineer, ideas
 - Fast development cycle
 - A cute mascot
 
-* go in a nutshell - the gopher
+
+* 1. go in a nutshell - the gopher
 
 .image images/gopher_search.png
 
-* go in a nutshell - What is Go? Features:
+
+* 1. go in a nutshell - What is Go? Features:
 
 - Native code generation (compiled)
 - Statically (and "strongly") typed 
@@ -46,9 +49,12 @@ Engineer, ideas
 
 .image images/frontpage.png
 
-* background / history
 
-* go history
+
+* 2. go.init()
+
+
+* 2. go.init()
 
 [[http://talks.golang.org/2012/go1.slide][talk rob: go v1.0]]
 
@@ -63,7 +69,8 @@ Engineer, ideas
 
 .image images/project.png
 
-* go principles
+
+* 2. go principles
 
 - Code review central to the project. 
 .link https://codereview.appspot.com
@@ -72,7 +79,12 @@ Engineer, ideas
 
 .image images/project.png
 
-* hello Go
+
+
+* 3. go.hello()
+
+
+* 3. hello Go
 
 .play hello.go
 
@@ -85,7 +97,8 @@ run
 
 .image  images/run.png
 
-* The go tool
+
+* 3. The go tool
 
 [[http://golang.org/]]
 
@@ -105,11 +118,13 @@ The go tool also wraps gofmt, gofix, etc.:
 	$ go fix                # Run gofix on package in current dir.
 
 
-* go language
+
+* 4. go language
 
 .link http://golang.org/ref/spec
 
-* packages
+
+* 4. packages
 	
 	bin/
 	    streak                         # command executable
@@ -128,29 +143,10 @@ The go tool also wraps gofmt, gofix, etc.:
 	                task.go            # package github.com/nf/task
 	            todo.go                # package main
 
-* func, var, type
 
+* 4.func, var, type
 
-* runes
-
-
-
-* structs
-
- access levels (Exported/non Exported) == public package private
- pointers vs values 
- pass by reference(maps, slices, channels)
-
-* interfaces
-
-Duck typing
-
-
-
-
-* go != java
-
-- declaration reversed
+variable declaration
 
 	var i int 
 	i = 5
@@ -158,6 +154,24 @@ Duck typing
 	var j = 5
 
 	k := 5
+
+
+* 4. runes
+
+
+* 4. structs
+
+ access levels (Exported/non Exported) == public package private
+ pointers vs values 
+ pass by reference(maps, slices, channels)
+
+
+* 4. interfaces
+
+Duck typing
+
+
+* ??? go != java
 
 - function types
 - multiple assignment
@@ -172,16 +186,16 @@ Duck typing
 - pointers vs Values
 - defer
 
-* formatting
+
+* 4. formatting
 
 - part of the language
+- no more discussions
+- 
 
 
 
-
-
-
-* Learn more
+* 5. Learn more
 
 The Go web site has a huge amount of documentation:
 
@@ -195,7 +209,10 @@ Google Code project:
 
 .link http://code.google.com/p/go
 
-* some projects using go
+tip: search for " _golang_ " instead of " _go_ "
+
+
+* 5. some projects using go
 
 - [[https://www.docker.io/][docker]]
 - [[http://www.packer.io/][packer]]
@@ -210,7 +227,9 @@ Google Code project:
 
 .link https://code.google.com/p/go-wiki/wiki/Projects
 .link http://blog.golang.org/4years
-* links used
+
+
+* 5. links used
 
 official go presentations:
 
@@ -221,10 +240,7 @@ other presentations:
 .link http://www.nada.kth.se/~snilsson/go_for_java_programmers
 
 
-
-
-
-* the go present tool
+* 5. the go present tool
 
 .link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
 
@@ -233,10 +249,7 @@ this presentation:
 .link http://go-talks.appspot.com/github.com/advincze/go-talks/talk.slide 
 
 
-
-* links
-
-search tip: search for "golang" instead of "go"
+* 5. more links 
 
 .link https://groups.google.com/forum/#!forum/golang-nuts gGroup golang-nuts
 
