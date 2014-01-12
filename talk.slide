@@ -8,7 +8,7 @@ Engineer, ideas
 
 @advincze
 
-* the structure of this talk
+* today
 
 - overview
 - history, language evolution
@@ -16,7 +16,6 @@ Engineer, ideas
 - go the language
 - workflow /tools (go get, fmt, run, build install, )
 - go projects
-
 
 * go in a nutshell
 
@@ -33,9 +32,7 @@ Engineer, ideas
 
 .image images/gopher_search.png
 
-* go in a nutshell - What is Go?
-
-Features:
+* go in a nutshell - What is Go? Features:
 
 - Native code generation (compiled)
 - Statically (and "strongly") typed 
@@ -46,6 +43,8 @@ Features:
 - Native concurrency support (yey multicores)
 - Excellent standard library
 - Great tools
+
+.image images/frontpage.png
 
 * background / history
 
@@ -62,13 +61,16 @@ Features:
 - v1.2 2013-12
 - planned: 2 releases / year 
 
+.image images/project.png
+
 * go principles
 
 - Code review central to the project. 
 .link https://codereview.appspot.com
 - "Discuss first, code later" 
-- part of the ecellent go toolchain:
-- Gofix automates updates for backward-incompatible changes. 
+- part of the ecellent go toolchain: Gofix automates updates for backward-incompatible changes. 
+
+.image images/project.png
 
 * hello Go
 
@@ -76,11 +78,12 @@ Features:
 
 build
 
-	cd hello/
-	*go* build
+	$ go build
 run
 
-	./hello 
+	$ ./hello 
+
+.image  images/run.png
 
 * The go tool
 
@@ -104,7 +107,7 @@ The go tool also wraps gofmt, gofix, etc.:
 
 * go language
 
-http://golang.org/ref/spec
+.link http://golang.org/ref/spec
 
 * packages
 	
@@ -206,7 +209,7 @@ Google Code project:
 - [[http://camlistore.org/][calimstore]], [[https://github.com/ha/doozerd][doozerd]], ...
 
 .link https://code.google.com/p/go-wiki/wiki/Projects
-
+.link http://blog.golang.org/4years
 * links used
 
 official go presentations:
