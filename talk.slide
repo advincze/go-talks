@@ -98,6 +98,13 @@ run
 .image  images/run.png
 
 
+* 3. hello GoSrv
+
+.code server.go
+
+.image  images/run.png
+
+
 * 3. The go tool
 
 [[http://golang.org/]]
@@ -143,17 +150,14 @@ The go tool also wraps gofmt, gofix, etc.:
 	                task.go            # package github.com/nf/task
 	            todo.go                # package main
 
+.image images/ref.png
 
-* 4.func, var, type
 
-variable declaration
+* 4. var, func, type
 
-	var i int 
-	i = 5
+.play -edit variables.go /BEGIN/,/END/
 
-	var j = 5
 
-	k := 5
 
 
 * 4. runes
@@ -170,6 +174,8 @@ variable declaration
 
 Duck typing
 
+
+* 4. maps and slices
 
 * ??? go != java
 

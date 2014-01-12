@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// BEGIN OMIT
+	var i int
+	i = 4
+
+	var j = 8
+
+	k := 15 // inferred type int
+	//k = int64(99) //compile time error
+	//k = "go" //compile time error
+
+	l, m := 16, 23 //multiple assignments
+
+	// END OMIT
+
+	fmt.Printf("i: %d\n", i)
+	fmt.Printf("j: %d\n", j)
+	fmt.Printf("k: %d\n", k)
+	fmt.Printf("l: %d\n", l)
+	fmt.Printf("m: %d\n", m)
+
+}
