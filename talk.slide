@@ -20,7 +20,7 @@ Engineer, ideas
 * 1. go in a nutshell
 
 
-* 1. go in a nutshell - Design of Go
+* 1. the design
 
 - Efficiency
 - Safety
@@ -30,12 +30,12 @@ Engineer, ideas
 - A cute mascot
 
 
-* 1. go in a nutshell - the gopher
+* 1. the gopher
 
 .image images/gopher_search.png
 
 
-* 1. go in a nutshell - What is Go? Features:
+* 1. features:
 
 - Native code generation (compiled)
 - Statically (and "strongly") typed 
@@ -131,7 +131,7 @@ The go tool also wraps gofmt, gofix, etc.:
 .link http://golang.org/ref/spec
 
 
-* 4. packages
+* 4. package
 	
 	bin/
 	    streak                         # command executable
@@ -190,7 +190,7 @@ The go tool also wraps gofmt, gofix, etc.:
 
 
 
-* error handling
+* error and exception handling
 
 - instead of exceptions , go uses errors and panic/recover
 
@@ -269,6 +269,12 @@ this presentation:
 .link https://groups.google.com/forum/#!forum/golang-nuts gGroup golang-nuts
 
 .link http://www.meetup.com/golang-users-berlin/events/159374622/ golang meetup with NG on 2014-02-04
+
+.link http://www.infoq.com/googlego/ go page on infoq 
+
+.link http://vimeo.com/channels/golang vimeo channel
+
+.link http://www.youtube.com/playlist?list=PLoJVVLKOp927tFsMbO2onhp26NnOAKAtO youtube channel
 
 twitter 
 
