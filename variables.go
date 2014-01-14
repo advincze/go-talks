@@ -24,6 +24,8 @@ func main() {
 	l, m := 16, 23                  //multiple assignments
 	bytes, err := json.Marshal(obj) //also used for error handling
 
+	m, l = l, m //switch variables in one line
+
 	// END OMIT
 
 	fmt.Printf("i: %d\n", i)

@@ -13,6 +13,7 @@ Engineer, ideas
 1. overview
 2. history, language evolution
 3. projects
+---
 4. example 
 5. workflow /tools (go get, fmt, run, build install, )
 6. the go language
@@ -76,7 +77,9 @@ Engineer, ideas
 - Code review central to the project. 
 .link https://codereview.appspot.com
 - "Discuss first, code later" 
-- go tools: e.g. gofix automates updates for backward-incompatible changes. 
+- written specification - 2 independent implementations
+- simplicity of the spec leads to effcient compiler and great tools
+- e.g. gofix automates updates for backward-incompatible changes. 
 
 .image images/project.png
 
@@ -180,50 +183,47 @@ The go tool also wraps gofmt, gofix, etc.:
 
 * 6. var
 
-.play variables.go /BEGIN/,/END/
+.play -edit variables.go /BEGIN/,/END/
 
 
 * 6. func
 
-- values vs refs
+.code -edit func.go /BEGIN/,/END/
 
+* 6. structs and interfaces
 
-* 6. structs
-
- access levels (Exported/non Exported) == public package private
- pointers vs values 
- pass by reference(maps, slices, channels)
-- oop :embedding
-
-
-* 6. interfaces
-
-- Duck typing
-- type switch
-
-
-* 6. maps and slices
-
-
+.play -edit interface.go /BEGIN/,/END/
 
 
 * 6. error and exception handling
 
-- instead of exceptions , go uses errors and panic/recover
+- different concepts for error handling and exception handling
+- errors handled at the point of their occurence
+
+.code -edit error.go /BEGIN ERROR/,/END ERROR/
+
+- exceptions are for really exceptional things 
+
+.code -edit error.go /BEGIN EXCEPTION/,/END EXCEPTION/
+
+- panics can be recovered
 
 
 * 6. concurrency and more
 
-- goroutines
-- channels
-- select
-- defer
-
-- race detector
+.play -edit concurrency.go /BEGIN/,/END/
 
 
 * 6. testing
 
+xxx_test.go:
+
+.code testing.go
+
+Then run the test with go test:
+
+	$ go test github.com/user/newmath
+	ok  	github.com/user/newmath 0.165s
 
 * 6. formatting
 
