@@ -12,10 +12,11 @@ Engineer, ideas
 
 1. overview
 2. history, language evolution
-3. example 
-4. the go language
+3. projects
+4. example 
 5. workflow /tools (go get, fmt, run, build install, )
-6. projects, links, thanks
+6. the go language
+7. links, thanks
 
 * 1. go in a nutshell
 
@@ -81,10 +82,28 @@ Engineer, ideas
 
 
 
-* 3. go.hello()
+* 3. some projects using go
+
+- [[https://www.docker.io/][docker]]
+- [[http://www.packer.io/][packer]]
+- [[http://www.serfdom.io/][serf]]
+- [[https://juju.ubuntu.com/][canonical/juju]]
+- [[http://heka-docs.readthedocs.org/en/latest/][mozilla/heka]]
+- google download servers: dl.google.com
+- backend@[[https://soundcloud.com/][SoundCloud]]
+- backend@[[https://www.wunderlist.com/][Wunderlist]]
+- [[http://www.iron.io/][ironMQ]]
+- [[http://camlistore.org/][calimstore]], [[https://github.com/ha/doozerd][doozerd]], ...
+
+.link https://code.google.com/p/go-wiki/wiki/Projects
+.link http://blog.golang.org/4years
 
 
-* 3. hello Go
+
+* 4. go.hello()
+
+
+* 4. hello Go
 
 .play hello.go
 
@@ -98,14 +117,15 @@ run
 .image  images/run.png
 
 
-* 3. hello GoSrv
+* 4. hello GoSrv
 
 .code server.go
 
 .image  images/run.png
 
 
-* 3. The go tool
+
+* 5. The go tool
 
 [[http://golang.org/]]
 
@@ -126,12 +146,12 @@ The go tool also wraps gofmt, gofix, etc.:
 
 
 
-* 4. go language
+* 6. go language
 
 .link http://golang.org/ref/spec
 
 
-* 4. package
+* 6. package
 	
 	bin/
 	    streak                         # command executable
@@ -153,25 +173,22 @@ The go tool also wraps gofmt, gofix, etc.:
 .image images/ref.png
 
 
-* 4. type
+* 6. type
 
 .code type.go /BEGIN/,/END/
 
 
-* 4. var
+* 6. var
 
 .play variables.go /BEGIN/,/END/
 
 
-* 4. func
+* 6. func
 
 - values vs refs
 
 
-* 4. runes
-
-
-* 4. structs
+* 6. structs
 
  access levels (Exported/non Exported) == public package private
  pointers vs values 
@@ -179,23 +196,23 @@ The go tool also wraps gofmt, gofix, etc.:
 - oop :embedding
 
 
-* 4. interfaces
+* 6. interfaces
 
 - Duck typing
 - type switch
 
 
-* 4. maps and slices
+* 6. maps and slices
 
 
 
 
-* error and exception handling
+* 6. error and exception handling
 
 - instead of exceptions , go uses errors and panic/recover
 
 
-* concurrency and more
+* 6. concurrency and more
 
 - goroutines
 - channels
@@ -204,13 +221,17 @@ The go tool also wraps gofmt, gofix, etc.:
 
 - race detector
 
-* 4. formatting
+
+* 6. testing
+
+
+* 6. formatting
 
 - part of the language
 - no more discussions
 
 
-* 5. Learn more
+* 7. Learn more
 
 The Go web site has a huge amount of documentation:
 
@@ -227,24 +248,7 @@ Google Code project:
 tip: search for " _golang_ " instead of " _go_ "
 
 
-* 5. some projects using go
-
-- [[https://www.docker.io/][docker]]
-- [[http://www.packer.io/][packer]]
-- [[http://www.serfdom.io/][serf]]
-- [[https://juju.ubuntu.com/][canonical/juju]]
-- [[http://heka-docs.readthedocs.org/en/latest/][mozilla/heka]]
-- google download servers: dl.google.com
-- backend@[[https://soundcloud.com/][SoundCloud]]
-- backend@[[https://www.wunderlist.com/][Wunderlist]]
-- [[http://www.iron.io/][ironMQ]]
-- [[http://camlistore.org/][calimstore]], [[https://github.com/ha/doozerd][doozerd]], ...
-
-.link https://code.google.com/p/go-wiki/wiki/Projects
-.link http://blog.golang.org/4years
-
-
-* 5. links used
+* 7. links used
 
 official go presentations:
 
@@ -255,7 +259,7 @@ other presentations:
 .link http://www.nada.kth.se/~snilsson/go_for_java_programmers
 
 
-* 5. the go present tool
+* 7. the go present tool
 
 .link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
 
@@ -264,7 +268,9 @@ this presentation:
 .link http://go-talks.appspot.com/github.com/advincze/go-talks/talk.slide 
 
 
-* 5. more links 
+* 7. more links 
+
+.link http://play.golang.org/
 
 .link https://groups.google.com/forum/#!forum/golang-nuts gGroup golang-nuts
 
