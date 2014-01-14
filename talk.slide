@@ -225,11 +225,19 @@ Then run the test with go test:
 	$ go test github.com/user/newmath
 	ok  	github.com/user/newmath 0.165s
 
-* 6. formatting
+- TDD encouraged
+- lot of BDD style frameworks available
+
+* 6. formatting, etc
 
 - part of the language
 - no more discussions
 
+- go fix
+- go vet
+- race detector
+- debugging via GNU gdb
+- ide support: IDEA13, goSumblime, vim, emacs
 
 * 7. Learn more
 
