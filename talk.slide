@@ -10,14 +10,16 @@ Engineer, ideas
 
 * today
 
-1. overview
-2. history, language evolution
-3. projects
+- 1. overview
+- 2. evolution
+- 3. projects
+
 ---
-4. example 
-5. workflow /tools (go get, fmt, run, build install, )
-6. the go language
-7. links, thanks
+
+- 4. examples 
+- 5. tools
+- 6. the language
+- 7. links, thanks
 
 * 1. go in a nutshell
 
@@ -29,6 +31,7 @@ Engineer, ideas
 - Concurrency
 - Scalability
 - Fast development cycle
+- Fun !
 - A cute mascot
 
 
@@ -67,7 +70,7 @@ Engineer, ideas
 - v1.0 2012-03
 - v1.1 2013-04
 - v1.2 2013-12
-- planned: 2 releases / year 
+- Planned: 2 releases / year 
 
 .image images/project.png
 
@@ -77,9 +80,9 @@ Engineer, ideas
 - Code review central to the project. 
 .link https://codereview.appspot.com
 - "Discuss first, code later" 
-- written specification - 2 independent implementations
-- simplicity of the spec leads to effcient compiler and great tools
-- e.g. gofix automates updates for backward-incompatible changes. 
+- Written specification - 2 independent implementations
+- Simplicity of the spec. leads to effcient compiler and great tools
+- E.g. gofix automates updates for backward-incompatible changes. 
 
 .image images/project.png
 
@@ -153,6 +156,7 @@ The go tool also wraps gofmt, gofix, etc.:
 
 .link http://golang.org/ref/spec
 
+.image /images/doc.png
 
 * 6. package
 	
@@ -184,6 +188,8 @@ The go tool also wraps gofmt, gofix, etc.:
 * 6. var
 
 .play -edit variables.go /BEGIN/,/END/
+
+.image /images/pkg.png
 
 
 * 6. func
@@ -237,6 +243,8 @@ Then run the test with go test:
 - debugging via GNU gdb
 - ide support: IDEA13, goSumblime, vim, emacs
 
+.image /images/talks.png
+
 * 7. Learn more
 
 The Go web site has a huge amount of documentation:
@@ -252,6 +260,8 @@ Google Code project:
 .link http://code.google.com/p/go
 
 tip: search for " _golang_ " instead of " _go_ "
+
+.image /images/doc.png
 
 
 * 7. links used
