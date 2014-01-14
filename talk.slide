@@ -230,9 +230,7 @@ Then run the test with go test:
 
 * 6. formatting, etc
 
-- part of the language
-- no more discussions
-
+- go fmt : no more discussions
 - go fix
 - go vet
 - race detector
