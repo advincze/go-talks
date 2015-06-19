@@ -1,0 +1,303 @@
+SOLID Go
+object oriented programming in go
+15 Jan 2014
+Tags: golang, concurrency
+
+Adam Vincze
+Engineer, WeltN24
+
+@advincze
+
+* today
+
+- 1. overview
+- 2. evolution
+- 3. projects
+
+---
+
+- 4. examples 
+- 5. tools
+- 6. the language
+- 7. links, thanks
+
+* 1. go in a nutshell
+
+
+* 1. the design
+
+- Efficiency
+- Safety
+- Concurrency
+- Scalability
+- Fast development cycle
+- Fun !
+- A cute mascot
+
+
+* 1. the gopher
+
+.image images/gopher_search.png
+
+
+* 1. features:
+
+- Native code generation (compiled)
+- Statically (and "strongly") typed 
+- Not really object oriented, very much oriented on objects
+- Composition via interfaces (Duck Typing)
+- Memory safe
+- Garbage collected
+- Native concurrency support (yey multicores)
+- Excellent standard library
+- Great tools
+
+.image images/frontpage.png
+
+
+
+* 2. go.init()
+
+
+* 2. go.init()
+
+[[http://talks.golang.org/2012/go1.slide][talk rob: go v1.0]]
+
+- Google 20% project in late 2007
+- Language designed by programmers (vs academia)
+- by Rob Pike, Ken Thompson, Robert Griesemer (Bell labs, Unix, Plan9, Java)
+- Released as an open source project in November 2009.
+- v1.0 2012-03
+- v1.1 2013-04
+- v1.2 2013-12
+- Planned: 2 releases / year 
+
+.image images/project.png
+
+
+* 2. go principles
+
+- Code review central to the project. 
+.link https://codereview.appspot.com
+- "Discuss first, code later" 
+- Written specification - 2 independent implementations
+- Simplicity of the spec. leads to effcient compiler and great tools
+- E.g. gofix automates updates for backward-incompatible changes. 
+
+.image images/project.png
+
+
+
+* 3. some projects using go
+
+- [[https://www.docker.io/][docker]]
+- [[http://www.packer.io/][packer]]
+- [[http://www.serfdom.io/][serf]]
+- [[https://juju.ubuntu.com/][canonical/juju]]
+- [[http://heka-docs.readthedocs.org/en/latest/][mozilla/heka]]
+- google download servers: dl.google.com
+- backend@[[https://soundcloud.com/][SoundCloud]]
+- backend@[[https://www.wunderlist.com/][Wunderlist]]
+- [[http://www.iron.io/][ironMQ]]
+- [[http://camlistore.org/][calimstore]], [[https://github.com/ha/doozerd][doozerd]], ...
+
+.link https://code.google.com/p/go-wiki/wiki/Projects
+.link http://blog.golang.org/4years
+
+
+
+* 4. go.hello()
+
+
+* 4. hello Go
+
+.play hello.go
+
+build
+
+	$ go build
+run
+
+	$ ./hello 
+
+.image  images/run.png
+
+
+* 4. hello GoSrv
+
+.code server.go
+
+.image  images/run.png
+
+
+
+* 5. The go tool
+
+[[http://golang.org/]]
+
+Installation: Download go (osx, linux, windows, etc)
+
+A complete build, test, and install tool for Go programs.
+Some realistic examples:
+
+	$ go run hello.go       # Compile-and-go. (Ha!).
+	$ go build package      # Build everything in directory (and deps).
+	$ go install            # Install everything in dir and (and deps).
+	$ go test archive/zip   # Compile and run unit tests for package.
+
+The go tool also wraps gofmt, gofix, etc.:
+
+	$ go fmt                # Run gofmt on package in current dir.
+	$ go fix                # Run gofix on package in current dir.
+
+
+
+* 6. go language
+
+.link http://golang.org/ref/spec
+
+.image /images/doc.png
+
+* 6. package
+	
+	bin/
+	    streak                         # command executable
+	    todo                           # command executable
+	src/
+	    code.google.com/p/goauth2/
+	        oauth/
+	            oauth.go               # package code.google.com/p/goauth2/oauth
+	            oauth_test.go          # package code.google.com/p/goauth2/oauth
+	    github.com/nf/
+	        streak/
+	            oauth.go               # package main
+	            streak.go              # package main
+	        todo/
+	            task/
+	                task.go            # package github.com/nf/task
+	            todo.go                # package main
+
+.image images/ref.png
+
+
+* 6. type
+
+.code type.go /BEGIN/,/END/
+
+
+* 6. var
+
+.play -edit variables.go /BEGIN/,/END/
+
+.image /images/pkg.png
+
+
+* 6. func
+
+.code -edit func.go /BEGIN/,/END/
+
+* 6. structs and interfaces
+
+.play -edit interface.go /BEGIN/,/END/
+
+
+* 6. error and exception handling
+
+- different concepts for error handling and exception handling
+- errors handled at the point of their occurence
+
+.code -edit error.go /BEGIN ERROR/,/END ERROR/
+
+- exceptions are for really exceptional things 
+
+.code -edit error.go /BEGIN EXCEPTION/,/END EXCEPTION/
+
+- panics can be recovered
+
+
+* 6. concurrency and more
+
+.play -edit concurrency.go /BEGIN/,/END/
+
+
+* 6. testing
+
+xxx_test.go:
+
+.code testing.go
+
+Then run the test with go test:
+
+	$ go test github.com/user/newmath
+	ok  	github.com/user/newmath 0.165s
+
+- TDD encouraged
+- lot of BDD style frameworks available
+
+* 6. formatting, etc
+
+- go fmt : no more discussions
+- go fix
+- go vet
+- race detector
+- debugging via GNU gdb
+- ide support: IDEA13, goSumblime, vim, emacs
+
+.image /images/talks.png
+
+* 7. Learn more
+
+The Go web site has a huge amount of documentation:
+
+.link http://golang.org
+
+Learn Go from a web browser:
+
+.link http://tour.golang.org
+
+Google Code project:
+
+.link http://code.google.com/p/go
+
+tip: search for " _golang_ " instead of " _go_ "
+
+.image /images/doc.png
+
+
+* 7. links used
+
+official go presentations:
+
+.link http://talks.golang.org/
+
+other presentations:
+
+.link http://www.nada.kth.se/~snilsson/go_for_java_programmers
+
+
+* 7. the go present tool
+
+.link http://godoc.org/code.google.com/p/go.tools/present present tool .slide file syntax
+
+this presentation: 
+
+.link http://go-talks.appspot.com/github.com/advincze/go-talks/talk.slide 
+
+
+* 7. more links 
+
+.link http://play.golang.org/
+
+.link https://groups.google.com/forum/#!forum/golang-nuts gGroup golang-nuts
+
+.link http://www.meetup.com/golang-users-berlin/events/159374622/ golang meetup with NG on 2014-02-04
+
+.link http://www.infoq.com/googlego/ go page on infoq 
+
+.link http://vimeo.com/channels/golang vimeo channel
+
+.link http://www.youtube.com/playlist?list=PLoJVVLKOp927tFsMbO2onhp26NnOAKAtO youtube channel
+
+twitter 
+
+.link https://twitter.com/golang_news @golang_news
