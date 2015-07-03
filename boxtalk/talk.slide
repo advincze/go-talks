@@ -19,11 +19,11 @@ Engineer, WeltN24
 - tooling
 
 * readability
+- typesafe
 - familiar (C, java, {}, keywords)
 .play hello.go
 
-- mostly imperative
-- typesafe
+- imperative style
 - easy to learn (short specs, few keywords) 
 [[http://golang.org/]]
 
@@ -34,8 +34,8 @@ Engineer, WeltN24
 - embedding
 - functions are values
 - full closures
-- type safety
-- cheap concurrency CSP
+- typesafe
+- built in concurrency (CSP)
 
 
 * TDD
