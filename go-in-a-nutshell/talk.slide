@@ -156,7 +156,7 @@ The go tool also wraps gofmt, gofix, etc.:
 
 .link http://golang.org/ref/spec
 
-.image /images/doc.png
+.image  images/doc.png
 
 * 6. package
 	

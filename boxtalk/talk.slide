@@ -1,0 +1,34 @@
+Golang
+the language of the cloud
+15 Jan 2014
+Tags: golang
+
+Adam Vincze
+Engineer, WeltN24
+
+@advincze
+
+* Go
+
+* what's go
+
+* go's USPs
+- readability
+- evolutionary development
+- TDD
+- tooling
+
+* readability
+- familiar (C, java, {}, keywords)
+.play hello.go
+
+- mostly imperative
+- typesafe
+- easy to learn (short specs, few keywords) 
+[[http://golang.org/][golang.org]]
+
+* evolutionary development
+
+* TDD
+
+* tooling
