@@ -25,10 +25,27 @@ Engineer, WeltN24
 - mostly imperative
 - typesafe
 - easy to learn (short specs, few keywords) 
-[[http://golang.org/][golang.org]]
+[[http://golang.org/]]
+
+- deliberately left out features (extends, assert, while/repeat/foreach, *generics, protected/pkgrpivate, )
 
 * evolutionary development
+- interfaces, structural typing (similar to duck typing)
+- embedding
+- functions are values
+- full closures
+- type safety
+- cheap concurrency CSP
+
 
 * TDD
+- built in testability, benchmarking, examples
+- language features support testing (interfaces)
+- std lib support
+[[http://golang.org/pkg/net/http/httptest/]]
+[[http://golang.org/pkg/testing/iotest/]]
+
+- black box testing
+[[http://golang.org/pkg/testing/quick/]]
 
 * tooling
