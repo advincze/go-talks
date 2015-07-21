@@ -22,12 +22,18 @@ Engineer, WeltN24
 - typesafe
 - familiar (C, java, {}, keywords)
 .play hello.go
+.image  images/run.png
+
+* readability
 
 - imperative style
 - easy to learn (short specs, few keywords) 
 [[http://golang.org/]]
 
 - deliberately left out features (extends, assert, while/repeat/foreach, *generics, protected/pkgrpivate, )
+
+.code server.go
+
 
 * evolutionary development
 - interfaces, structural typing (similar to duck typing)
