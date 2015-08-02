@@ -1,4 +1,4 @@
-Golang
+Go
 the language of the cloud
 15 Jan 2014
 Tags: golang
@@ -8,50 +8,114 @@ Engineer, WeltN24
 
 @advincze
 
+* familiar?
+
+.image  images/compiling.png
+.caption [[https://xkcd.com/303/]]
+
+
 * Go
+- [[golang.org][open source]]
+- production ready ([[http://golang.org/doc/devel/release.html][1.x]] since march 2012)
 
-* what's go
+- statically typed
+- Garbage-collected
+- Compiles to native code
 
-* go's USPs
+* Go is designed for ...
+- Large teams
+- Concurrent problems
+- Fast compilation, efficient execution
+- Dev+Ops happiness
+
+* Go is best for
+- servers (cloud)
+- command line tools
+
+* Go 
+
+- [[http://stevebate.silvrback.com/go-is-boring][Go is boring ?]] 
+(distilled set of successful features and concepts from other languages)
+
+- orthogonality
+- [[http://blog.golang.org/open-source][Do Less. Enable More.]]
+(OOP, keyword redundancy, protected/pkgrpivate, generics*)
+
+
+* Go - you had me at hello world
+
+the language
+
 - readability
 - evolutionary development
-- TDD
-- tooling
+- concurrency
+
+environment/tooling
+
+- testing
+- Dev+Ops happiness
+
+.caption [[https://www.youtube.com/watch?v=qKjUon9vUgU]]
 
 * readability
 - typesafe
 - familiar (C, java, {}, keywords)
 .play hello.go
 .image  images/run.png
+.caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
 
 * readability
 
 - imperative style
-- easy to learn (short specs, few keywords) 
-[[http://golang.org/]]
-
-- deliberately left out features (extends, assert, while/repeat/foreach, *generics, protected/pkgrpivate, )
-
+- easy to learn (short [[http://golang.org/ref/spec][specs]], few [[http://golang.org/ref/spec#Keywords][keywords]]) 
 .code server.go
 
 
 * evolutionary development
 - interfaces, structural typing (similar to duck typing)
+.code -edit interface.go /BEGIN INTERFACE/,/END INTERFACE/
+
+* evolutionary development
 - embedding
-- functions are values
-- full closures
-- typesafe
-- built in concurrency (CSP)
+.play -edit interface.go /BEGIN EMBEDDING/,/END EMBEDDING/
 
+* concurrency - built in CSP
+[[http://golang.org/s/concurrency-is-not-parallelism][Concurrency is not parallelism]]
+- functions are values (closures)
+- goroutines
+- channels
 
-* TDD
+* concurrency - built in CSP
+.play -edit concurrency.go /BEGIN/,/END/
+
+* testing
 - built in testability, benchmarking, examples
 - language features support testing (interfaces)
-- std lib support
-[[http://golang.org/pkg/net/http/httptest/]]
-[[http://golang.org/pkg/testing/iotest/]]
+- std lib support ([[http://golang.org/pkg/net/http/httptest/][httptest]], [[http://golang.org/pkg/testing/iotest/][iotest]])
 
-- black box testing
-[[http://golang.org/pkg/testing/quick/]]
+- black box testing ([[http://golang.org/pkg/testing/quick/][quick]])
 
-* tooling
+* testing
+[[https://github.com/golang/go/blob/master/src/strings/strings_test.go][strings/strings_test.go]]
+
+.code strings_test.go /BEGIN TEST/,/END TEST/
+
+* benchmarking
+[[https://github.com/golang/go/blob/master/src/strings/strings_test.go][strings/strings_test.go]]
+
+.code strings_test.go /BEGIN BENCH/,/END BENCH/
+
+	PASS
+	BenchmarkIndexRune-4	20000000	        83.5 ns/op
+	ok  	_/Users/adv/dev/go-talks/boxtalk	1.832s
+
+
+* environment/tools
+- go fmt - std formatting for the whole go community
+- go build, go install - compiler
+- go test, cover - runs tests, benchmarks, test coverage analysis
+- goimports - adds missing imports
+- go vet, golint - static code analysis
+- [[http://blog.golang.org/profiling-go-programs][pprof]] - profiling tool
+
+

@@ -4,13 +4,15 @@ import (
 	"fmt"
 )
 
-// BEGIN OMIT
-
-type Shaper interface {
+// BEGIN INTERFACE OMIT
+type Surface interface {
 	Area() int
 }
 
-// Duck typing : types implicitly fulfill interfaces
+var s Surface = Rectangle{4, 4}
+
+// structural typing: types implicitly fulfill interfaces
+// BEGIN EMBEDDING OMIT
 type Rectangle struct {
 	length, width int
 }
@@ -19,20 +21,20 @@ func (r Rectangle) Area() int {
 	return r.length * r.width
 }
 
-// Embedding
+// END INTERFACE OMIT
 type Square struct {
-	Rectangle
+	Rectangle // Embedding
 }
 
 func NewSquare(length int) *Square {
-	return &Square{Rectangle: Rectangle{length, length}}
+	return &Square{Rectangle{length, length}}
 }
 
 func main() {
 	fmt.Printf("square area: %d \n", NewSquare(4).Area())
 }
 
-// END OMIT
+// END EMBEDDING OMIT
 
 //works not oly for structs
 type OneDimensionalPoint int

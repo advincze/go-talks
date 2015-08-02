@@ -9,19 +9,17 @@ import (
 //BEGIN OMIT
 func main() {
 	//channels
-	c := make(chan int)
+	c := make(chan int, 2)
 	//goroutines
-	go printPrimes(c, 10000)
+	go fetchPrimes(c, 10000)
 
-	for i := range c {
-		fmt.Println(i)
-		if i > 30 {
-			close(c)
-		}
+	//receive primes
+	for i := 0; i < 5; i++ {
+		fmt.Println(<-c)
 	}
 }
 
-func printPrimes(c chan int, limit int) {
+func fetchPrimes(c chan<- int, limit int) {
 	for i := 0; i < limit; i++ {
 		if isPrime(i) {
 			c <- i
