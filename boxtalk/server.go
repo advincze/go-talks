@@ -12,7 +12,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "hello world\n")
+	fmt.Fprintln(w, "hello world")
 }
 
 // END OMIT

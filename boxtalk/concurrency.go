@@ -12,17 +12,19 @@ func main() {
 	c := make(chan int, 2)
 	//goroutines
 	go fetchPrimes(c, 10000)
-
+	fmt.Println("fetch started")
 	//receive primes
 	for i := 0; i < 5; i++ {
-		fmt.Println(<-c)
+		fmt.Println(<-c) // HL
 	}
 }
 
 func fetchPrimes(c chan<- int, limit int) {
-	for i := 0; i < limit; i++ {
+	for i := 2; i < limit; i++ {
 		if isPrime(i) {
-			c <- i
+			fmt.Println("sending", i)
+			c <- i // HL
+			fmt.Println("sent", i)
 		}
 	}
 }

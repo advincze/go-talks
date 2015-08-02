@@ -4,7 +4,7 @@ the language of the cloud
 Tags: golang
 
 Adam Vincze
-Engineer, WeltN24
+Engineer, WeLT
 
 @advincze
 
@@ -17,7 +17,7 @@ Engineer, WeltN24
 * Go
 - [[golang.org][open source]]
 - production ready ([[http://golang.org/doc/devel/release.html][1.x]] since march 2012)
-
+# TODO examples
 - statically typed
 - Garbage-collected
 - Compiles to native code
@@ -39,7 +39,7 @@ Engineer, WeltN24
 
 - orthogonality
 - [[http://blog.golang.org/open-source][Do Less. Enable More.]]
-(OOP, keyword redundancy, protected/pkgrpivate, generics*)
+(OOP, keywords, exporting, generics*)
 
 
 * Go - you had me at hello world
@@ -47,7 +47,7 @@ Engineer, WeltN24
 the language
 
 - readability
-- evolutionary development
+- evolutionary design
 - concurrency
 
 environment/tooling
@@ -71,16 +71,22 @@ environment/tooling
 .code server.go
 
 
-* evolutionary development
+* evolutionary design
 - interfaces, structural typing (similar to duck typing)
 .code -edit interface.go /BEGIN INTERFACE/,/END INTERFACE/
 
-* evolutionary development
+* evolutionary design
 - embedding
 .play -edit interface.go /BEGIN EMBEDDING/,/END EMBEDDING/
 
 * concurrency - built in CSP
 [[http://golang.org/s/concurrency-is-not-parallelism][Concurrency is not parallelism]]
+
+.image images/gophersimple1.jpg
+
+* concurrency - built in CSP
+.image images/gophercomplex5.jpg
+
 - functions are values (closures)
 - goroutines
 - channels
@@ -94,6 +100,7 @@ environment/tooling
 - std lib support ([[http://golang.org/pkg/net/http/httptest/][httptest]], [[http://golang.org/pkg/testing/iotest/][iotest]])
 
 - black box testing ([[http://golang.org/pkg/testing/quick/][quick]])
+- fuzz testing ([[https://godoc.org/github.com/google/gofuzz][gofuzz]])
 
 * testing
 [[https://github.com/golang/go/blob/master/src/strings/strings_test.go][strings/strings_test.go]]
