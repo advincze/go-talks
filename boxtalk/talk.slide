@@ -118,11 +118,24 @@ environment/tooling
 
 
 * environment/tools
-- go fmt - std formatting for the whole go community
-- go build, go install - compiler
-- go test, cover - runs tests, benchmarks, test coverage analysis
-- goimports - adds missing imports
+- go fmt - std go code format for the whole go community
+- go build, go install - compile
+(collaboration, dependency vendoring)
+- go test, cover - run test, benchmark, test coverage analysis
+- goimports - add missing imports
 - go vet, golint - static code analysis
 - [[http://blog.golang.org/profiling-go-programs][pprof]] - profiling tool
+- works in your favourite text editor
+
+
+* one more thing
+mobile first ?
+- works on windows, linux, darwin, ...
+- works on x86, amd64, arm
+- works on [[https://play.google.com/store/apps/details?id=org.golang.ivy][android]]
+- works on [[https://itunes.apple.com/us/app/ivy-big-number-calculator/id1012116478?mt=8][iOS]]
+- 7 go conferences in 2015
+- [[https://www.google.de/trends/explore#cat=0-5-31&q=%2Fm%2F09gbxjr%2C%20%2Fm%2F091hdj&cmpt=q&tz=Etc%2FGMT-2][go vs scala]]
+
 
 
