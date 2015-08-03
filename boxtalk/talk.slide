@@ -17,10 +17,10 @@ Engineer, WeLT
 * Go
 - [[golang.org][open source]]
 - production ready ([[http://golang.org/doc/devel/release.html][1.x]] since march 2012)
-# TODO examples
+- community: 7 go conferences in 2015
 - statically typed
 - Garbage-collected
-- Compiles to native code
+- Compiles to native code (windows, linux, darwin, ...; x86, amd64, arm, ...)
 
 * Go is designed for ...
 - Large teams
@@ -121,21 +121,28 @@ environment/tooling
 - go fmt - std go code format for the whole go community
 - go build, go install - compile
 (collaboration, dependency vendoring)
+
 - go test, cover - run test, benchmark, test coverage analysis
 - goimports - add missing imports
 - go vet, golint - static code analysis
 - [[http://blog.golang.org/profiling-go-programs][pprof]] - profiling tool
 - works in your favourite text editor
 
+* libs
+[[https://github.com/avelino/awesome-go]]
+
+* companies using Go
+[[https://github.com/golang/go/wiki/GoUsers][*]] *6Wunderkinder*, 99designs, ActiveState, adeven, Airbrake, Apcera, *Apple*, Aruba Networks, Avocet, *BBC* Worldwide, Beachfront Media articl, Beme, Betable, Bitbucket, bitly, Blackbuck Computing, bol.com, Booking.com, Bowery, Canonical, Carbon Games, Clever, CloudFlare, *CloudFoundry*, CloudWalk, clypd, Codeship, Conformal Systems, *CoreOS*, Couchbase, Crashlytics, Cupcake, CURT Manufacturing, CustomerIO, DigitalOcean, *Disqus*, DNSimple, domainr, *Docker*, drone.io, Dropbox, Economist, *Embedly*, EMC Cloud Services, ErrPlane, Everything.me, Exotel, *Facebook*, Factom, Foize, Flipboard, General Electric Software, Gengo, Getty Images, *GitHub*, Globo.com, *GOV.UK*, Granify, Hailo, *HashiCorp*, Heroku, Hooklift, IBM, Igneou, InfluxDB, Intel Germany, Iron.io, JelloLabs, Jimdo, Keybase.io, Kingsoft, Koding, LabStack, Lincoln Loop, Maldiv, MalwareBytes, MaxCDN, Medium, Microcosm, Modcloth, Moovweb, MongoDB, *MozillaServices*, MROffice, New Bamboo, *NewYorkTimes*, Nexwa, ngmoco:), Novartis, Ooyala, OpenShift, Oyster Books, Percona, Plano Bê, pool.ntp.org, Poptip job postin, Public Good Corp, Quram, Rawstream, Raygun, Remind101, Rendered :Text, Repustate, Rounds, Secret, Segment, SendGrid, SendHub, Shopify twee, Showyou sourc, Siminars, SmartyStreets sourc, SmugMug, Skimlinks blo, *SoundCloud*, Sourcegraph githu, Space Monkey, Splice, Springer, Square, Stack Exchange, StatHat, Steals.com blo, Streetspotr, SyndicatePro, Tamber, Teamwork, The Plant, Thomson Reuters Eikon, Thumbtack, Timehop, TinkerCa, Toggl, Torbit, Transloadit, Tumblr, TurboBytes, TV4 (Swedish TV station), Twitch, *Twitter*, TweetQureet, Uber, Umbel, Undisclosed.ch, Urlist, Viki, VividCortex, Zynga
 
 * one more thing
-mobile first ?
-- works on windows, linux, darwin, ...
-- works on x86, amd64, arm
+
+
+* mobile first ?
 - works on [[https://play.google.com/store/apps/details?id=org.golang.ivy][android]]
 - works on [[https://itunes.apple.com/us/app/ivy-big-number-calculator/id1012116478?mt=8][iOS]]
-- 7 go conferences in 2015
-- [[https://www.google.de/trends/explore#cat=0-5-31&q=%2Fm%2F09gbxjr%2C%20%2Fm%2F091hdj&cmpt=q&tz=Etc%2FGMT-2][go vs scala]]
+
+
+# [[https://www.google.de/trends/explore#cat=0-5-31&q=%2Fm%2F09gbxjr%2C%20%2Fm%2F091hdj&cmpt=q&tz=Etc%2FGMT-2][go vs scala]]
 
 
 
