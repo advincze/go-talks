@@ -22,6 +22,8 @@ Engineer, WeLT
 - Garbage-collected
 - Compiles to native code (windows, linux, darwin, ...; x86, amd64, arm, ...)
 
+
+
 * Go is designed for ...
 - Large teams
 - Concurrent problems
@@ -41,6 +43,9 @@ Engineer, WeLT
 - [[http://blog.golang.org/open-source][Do Less. Enable More.]]
 (OOP, keywords, exporting, generics*)
 
+
+* companies using Go
+[[https://github.com/golang/go/wiki/GoUsers][*]] *6Wunderkinder*, 99designs, ActiveState, adeven, Airbrake, Apcera, *Apple*, Aruba Networks, Avocet, *BBC* Worldwide, Beachfront Media articl, Beme, Betable, Bitbucket, bitly, Blackbuck Computing, bol.com, Booking.com, Bowery, Canonical, Carbon Games, Clever, CloudFlare, *CloudFoundry*, CloudWalk, clypd, Codeship, Conformal Systems, *CoreOS*, Couchbase, Crashlytics, Cupcake, CURT Manufacturing, CustomerIO, DigitalOcean, *Disqus*, DNSimple, domainr, *Docker*, drone.io, Dropbox, Economist, *Embedly*, EMC Cloud Services, ErrPlane, Everything.me, Exotel, *Facebook*, Factom, Foize, Flipboard, General Electric Software, Gengo, Getty Images, *GitHub*, Globo.com, *GOV.UK*, Granify, Hailo, *HashiCorp*, Heroku, Hooklift, IBM, Igneou, InfluxDB, Intel Germany, Iron.io, JelloLabs, Jimdo, Keybase.io, Kingsoft, Koding, LabStack, Lincoln Loop, Maldiv, MalwareBytes, MaxCDN, Medium, Microcosm, Modcloth, Moovweb, MongoDB, *MozillaServices*, MROffice, New Bamboo, *NewYorkTimes*, Nexwa, ngmoco:), Novartis, Ooyala, OpenShift, Oyster Books, Percona, Plano Bê, pool.ntp.org, Poptip job postin, Public Good Corp, Quram, Rawstream, Raygun, Remind101, Rendered :Text, Repustate, Rounds, Secret, Segment, SendGrid, SendHub, Shopify twee, Showyou sourc, Siminars, SmartyStreets sourc, SmugMug, Skimlinks blo, *SoundCloud*, Sourcegraph githu, Space Monkey, Splice, Springer, Square, Stack Exchange, StatHat, Steals.com blo, Streetspotr, SyndicatePro, Tamber, Teamwork, The Plant, Thomson Reuters Eikon, Thumbtack, Timehop, TinkerCa, Toggl, Torbit, Transloadit, Tumblr, TurboBytes, TV4 (Swedish TV station), Twitch, *Twitter*, TweetQureet, Uber, Umbel, Undisclosed.ch, Urlist, Viki, VividCortex, Zynga
 
 * Go - you had me at hello world
 
@@ -131,8 +136,6 @@ environment/tooling
 * libs
 [[https://github.com/avelino/awesome-go]]
 
-* companies using Go
-[[https://github.com/golang/go/wiki/GoUsers][*]] *6Wunderkinder*, 99designs, ActiveState, adeven, Airbrake, Apcera, *Apple*, Aruba Networks, Avocet, *BBC* Worldwide, Beachfront Media articl, Beme, Betable, Bitbucket, bitly, Blackbuck Computing, bol.com, Booking.com, Bowery, Canonical, Carbon Games, Clever, CloudFlare, *CloudFoundry*, CloudWalk, clypd, Codeship, Conformal Systems, *CoreOS*, Couchbase, Crashlytics, Cupcake, CURT Manufacturing, CustomerIO, DigitalOcean, *Disqus*, DNSimple, domainr, *Docker*, drone.io, Dropbox, Economist, *Embedly*, EMC Cloud Services, ErrPlane, Everything.me, Exotel, *Facebook*, Factom, Foize, Flipboard, General Electric Software, Gengo, Getty Images, *GitHub*, Globo.com, *GOV.UK*, Granify, Hailo, *HashiCorp*, Heroku, Hooklift, IBM, Igneou, InfluxDB, Intel Germany, Iron.io, JelloLabs, Jimdo, Keybase.io, Kingsoft, Koding, LabStack, Lincoln Loop, Maldiv, MalwareBytes, MaxCDN, Medium, Microcosm, Modcloth, Moovweb, MongoDB, *MozillaServices*, MROffice, New Bamboo, *NewYorkTimes*, Nexwa, ngmoco:), Novartis, Ooyala, OpenShift, Oyster Books, Percona, Plano Bê, pool.ntp.org, Poptip job postin, Public Good Corp, Quram, Rawstream, Raygun, Remind101, Rendered :Text, Repustate, Rounds, Secret, Segment, SendGrid, SendHub, Shopify twee, Showyou sourc, Siminars, SmartyStreets sourc, SmugMug, Skimlinks blo, *SoundCloud*, Sourcegraph githu, Space Monkey, Splice, Springer, Square, Stack Exchange, StatHat, Steals.com blo, Streetspotr, SyndicatePro, Tamber, Teamwork, The Plant, Thomson Reuters Eikon, Thumbtack, Timehop, TinkerCa, Toggl, Torbit, Transloadit, Tumblr, TurboBytes, TV4 (Swedish TV station), Twitch, *Twitter*, TweetQureet, Uber, Umbel, Undisclosed.ch, Urlist, Viki, VividCortex, Zynga
 
 * one more thing
 
