@@ -130,8 +130,9 @@ environment/tooling
 - go test, cover - run test, benchmark, test coverage analysis
 - goimports - add missing imports
 - go vet, golint - static code analysis
+- race detector
 - [[http://blog.golang.org/profiling-go-programs][pprof]] - profiling tool
-- works in your favourite text editor
+- works in your favourite text editor (sublime, vim, intellij, atom, emacs, acme)
 
 * libs
 [[https://github.com/avelino/awesome-go]]
