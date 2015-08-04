@@ -8,44 +8,39 @@ Engineer, WeLT
 
 @advincze
 
-* familiar?
-
-.image  images/compiling.png
-.caption [[https://xkcd.com/303/]]
-
-
 * Go
-- [[golang.org][open source]]
-- production ready ([[http://golang.org/doc/devel/release.html][1.x]] since march 2012)
-- community: 7 go conferences in 2015
+
 - statically typed
 - Garbage-collected
-- Compiles to native code (windows, linux, darwin, ...; x86, amd64, arm, ...)
+- Compiles to native code - single binary FTW
 
+designed for ...
 
-
-* Go is designed for ...
 - Large teams
 - Concurrent problems
 - Fast compilation, efficient execution
 - Dev+Ops happiness
 
-* Go is best for
-- servers (cloud)
-- command line tools
 
-* Go 
-
-- [[http://stevebate.silvrback.com/go-is-boring][Go is boring ?]] 
-(distilled set of successful features and concepts from other languages)
-
-- orthogonality
-- [[http://blog.golang.org/open-source][Do Less. Enable More.]]
-(OOP, keywords, exporting, generics*)
-
+* Go
+- production ready ([[http://golang.org/doc/devel/release.html][1.x]] since march 2012)
+- open source community: 7 go conferences in 2015
 
 * companies using Go
 [[https://github.com/golang/go/wiki/GoUsers][*]] *6Wunderkinder*, 99designs, ActiveState, adeven, Airbrake, Apcera, *Apple*, Aruba Networks, Avocet, *BBC* Worldwide, Beachfront Media articl, Beme, Betable, Bitbucket, bitly, Blackbuck Computing, bol.com, Booking.com, Bowery, Canonical, Carbon Games, Clever, CloudFlare, *CloudFoundry*, CloudWalk, clypd, Codeship, Conformal Systems, *CoreOS*, Couchbase, Crashlytics, Cupcake, CURT Manufacturing, CustomerIO, DigitalOcean, *Disqus*, DNSimple, domainr, *Docker*, drone.io, Dropbox, Economist, *Embedly*, EMC Cloud Services, ErrPlane, Everything.me, Exotel, *Facebook*, Factom, Foize, Flipboard, General Electric Software, Gengo, Getty Images, *GitHub*, Globo.com, *GOV.UK*, Granify, Hailo, *HashiCorp*, Heroku, Hooklift, IBM, Igneou, InfluxDB, Intel Germany, Iron.io, JelloLabs, Jimdo, Keybase.io, Kingsoft, Koding, LabStack, Lincoln Loop, Maldiv, MalwareBytes, MaxCDN, Medium, Microcosm, Modcloth, Moovweb, MongoDB, *MozillaServices*, MROffice, New Bamboo, *NewYorkTimes*, Nexwa, ngmoco:), Novartis, Ooyala, OpenShift, Oyster Books, Percona, Plano Bê, pool.ntp.org, Poptip job postin, Public Good Corp, Quram, Rawstream, Raygun, Remind101, Rendered :Text, Repustate, Rounds, Secret, Segment, SendGrid, SendHub, Shopify twee, Showyou sourc, Siminars, SmartyStreets sourc, SmugMug, Skimlinks blo, *SoundCloud*, Sourcegraph githu, Space Monkey, Splice, Springer, Square, Stack Exchange, StatHat, Steals.com blo, Streetspotr, SyndicatePro, Tamber, Teamwork, The Plant, Thomson Reuters Eikon, Thumbtack, Timehop, TinkerCa, Toggl, Torbit, Transloadit, Tumblr, TurboBytes, TV4 (Swedish TV station), Twitch, *Twitter*, TweetQureet, Uber, Umbel, Undisclosed.ch, Urlist, Viki, VividCortex, Zynga
+
+* Go is best for
+
+- servers (cloud)
+- command line tools
+
+* Go Philosophy
+
+- [[http://stevebate.silvrback.com/go-is-boring][Go is boring ?]] 
+(distilled set of successful features and concepts from other languages)
+- [[http://blog.golang.org/open-source][Do Less. Enable More.]]
+- orthogonality
+
 
 * Go - you had me at hello world
 
@@ -63,6 +58,8 @@ environment/tooling
 .caption [[https://www.youtube.com/watch?v=qKjUon9vUgU]]
 
 * readability
+
+* readability
 - typesafe
 - familiar (C, java, {}, keywords)
 .play hello.go
@@ -75,6 +72,7 @@ environment/tooling
 - easy to learn (short [[http://golang.org/ref/spec][specs]], few [[http://golang.org/ref/spec#Keywords][keywords]]) 
 .code server.go
 
+* evolutionary design
 
 * evolutionary design
 - interfaces, structural typing (similar to duck typing)
@@ -84,8 +82,12 @@ environment/tooling
 - embedding
 .play -edit interface.go /BEGIN EMBEDDING/,/END EMBEDDING/
 
+* concurrency
+
+
 * concurrency - built in CSP
-[[http://golang.org/s/concurrency-is-not-parallelism][Concurrency is not parallelism]]
+
+.link http://golang.org/s/concurrency-is-not-parallelism is not parallelism
 
 .image images/gophersimple1.jpg
 
@@ -99,6 +101,8 @@ environment/tooling
 * concurrency - built in CSP
 .play -edit concurrency.go /BEGIN/,/END/
 
+* environment/tooling
+
 * testing
 - built in testability, benchmarking, examples
 - language features support testing (interfaces)
@@ -106,6 +110,8 @@ environment/tooling
 
 - black box testing ([[http://golang.org/pkg/testing/quick/][quick]])
 - fuzz testing ([[https://godoc.org/github.com/google/gofuzz][gofuzz]])
+
+.image  images/project.png
 
 * testing
 [[https://github.com/golang/go/blob/master/src/strings/strings_test.go][strings/strings_test.go]]
@@ -130,9 +136,10 @@ environment/tooling
 - go test, cover - run test, benchmark, test coverage analysis
 - goimports - add missing imports
 - go vet, golint - static code analysis
-- race detector
 - [[http://blog.golang.org/profiling-go-programs][pprof]] - profiling tool
-- works in your favourite text editor (sublime, vim, intellij, atom, emacs, acme)
+- works in your favourite text editor
+
+.image  images/pkg.png
 
 * libs
 [[https://github.com/avelino/awesome-go]]
@@ -144,10 +151,6 @@ environment/tooling
 * mobile first ?
 - works on [[https://play.google.com/store/apps/details?id=org.golang.ivy][android]]
 - works on [[https://itunes.apple.com/us/app/ivy-big-number-calculator/id1012116478?mt=8][iOS]]
-
-
-.image images/talks.png
-
 
 
 * questions ?
