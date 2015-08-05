@@ -76,6 +76,7 @@ environment/tooling
 
 * evolutionary design
 - interfaces, structural typing (similar to duck typing)
+- no `implements` needed
 .code -edit interface.go /BEGIN INTERFACE/,/END INTERFACE/
 
 * evolutionary design
@@ -149,13 +150,17 @@ Don't communicate by sharing memory, share memory by communicating.
 
 * one more thing
 
+go course @AS/WeLT ?
+
+
+
+
+* questions ?
 
 * mobile first ?
 - works on [[https://play.google.com/store/apps/details?id=org.golang.ivy][android]]
 - works on [[https://itunes.apple.com/us/app/ivy-big-number-calculator/id1012116478?mt=8][iOS]]
 
-
-* questions ?
 
 *  Learn more
 
